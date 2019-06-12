@@ -1,0 +1,131 @@
+% introduzione al corso di codifica del testo anno accademico 2018/2019
+
+\documentclass{beamer}
+    
+%    \usepackage[english]{babel}
+    %\usepackage[latin1]{inputenc}
+    %\usepackage[T1]{fontenc}
+
+\mode<presentation>{
+  \setbeamertemplate{background canvas}[vertical shading]
+  \usetheme{Berkeley}
+  \useoutertheme{himinfolines}
+}
+  
+\usepackage{ucs}
+\usepackage[utf8]{inputenc}
+\usepackage[english,polutonikogreek,italian,UKenglish,british]{babel}
+\usepackage{graphicx}
+\usepackage{colortbl}
+\usepackage{multicol}
+\usepackage{ulem}
+\usepackage{verbatim}
+\usepackage{alltt}
+\usepackage{ccicons}
+\usepackage{MnSymbol,wasysym}
+\usepackage{tikzsymbols}
+\usepackage{textcomp}
+\usepackage{xmpincl}
+
+\usepackage{parskip}
+\setcounter{nframes}{70}
+\setcounter{nframe}{1}
+\setbeamercovered{dynamic}
+\newenvironment{grcenv}{\begin{otherlanguage}{greek}}{\end{otherlanguage}}
+\newcommand{\g}[1]{\textgreek{#1}}
+\definecolor{darkgreen}{rgb}{0,0.5,0}
+\definecolor{darkblue}{rgb}{0,0,0.5}
+\definecolor{grey}{rgb}{0.5,0.5,0.5}
+\setcounter{tocdepth}{5}
+
+\makeatletter
+
+\makeatother
+%\includexmp{LicencesAndLicensing}
+
+%frame00 metadata
+	\title{Introduzione sistema git per edizioni collaborative}
+	\author[A.M. Del Grosso]{Angelo Mario Del Grosso}
+	\institute{DIGITAL TOOLS FOR HUMANISTS SUMMER SCHOOL 2019}
+    %\institute{\texttt{angelo.delgrosso@ilc.cnr.it} \\\bigskip\textit{CNR-ILC-LicoLab} \\\bigskip\url{http://licolab.ilc.cnr.it/}}
+    \institute{\texttt{angelo.delgrosso@ilc.cnr.it} \\\bigskip\textit{CNR-ILC-LicoLab}}
+    \date{Istituto di Linguistica Computazionale ``A. Zampolli'', \today}
+    \AtBeginSection[]{
+    \begin{frame}<beamer>
+    \addtocounter{nframe}{1}
+    \footnotesize
+    \frametitle{Progress status}
+    \tableofcontents[currentsection,hideothersubsections]
+    \end{frame}
+    }
+
+\begin{document}
+
+\begin{frame}
+	\maketitle
+\end{frame}
+
+\begin{frame}
+	\frametitle{Outline}
+	\tableofcontents
+\end{frame}
+
+\section{Self Introduction}
+
+\begin{frame}
+	\frametitle{What my work is on}
+	\addtocounter{nframe}{1}
+
+	\begin{block}{Digital and Computational Philology}
+		%slide di presentazione: chi sono, piccola bio, di cosa mi occupo
+		%\\prendere dal curriculum alcuni pezzi mettere mail istituzionale ed eventualmente telefono
+		Analisi, progettazione e sviluppo di componenti software per sistemi di linguistica e filologia digitale/computazionale volti alla rappresentazione, trattamento, fruizione e indagine di testi di tradizione medievale, a stampa e di autori moderni e contemporanei.
+	\end{block}
+
+	% \begin{block}{Modelli Object Oriented per il Textual Scholarship}
+	% 	Impiego delle nuove tecnologie nell’ambito delle Digital Humanities (DH) per la progettazione object–oriented di strumenti digitali Web–based rispondenti alle esigenze degli utenti accademici, studenti e sviluppatori.
+	% \end{block}
+
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Topic of the talk}
+	\addtocounter{nframe}{1}
+
+	\begin{center}
+		\includegraphics[width=.7\textwidth]{./imgs/git-github.jpeg}
+	\end{center}
+
+	%\begin{itemize}
+	%	\item<1-> Introduzione
+	%	\item<2-> Codifica dei Caratteri
+	%   \item<3-> Codifica dei Testi
+	%   \item<4-> Ecosistema XML (Linee Guida TEI)
+	%   \item<5-> Conclusioni
+	%\end{itemize}
+
+\end{frame}
+
+
+
+\section{VCS Introduction}
+\input{includes/intro.tex}
+
+\section{git environment by command line interface}
+\input{includes/git-cli.tex}
+
+\section{gitHub host platform}
+\input{includes/git-hub.tex}
+
+\section{Extra}
+\input{includes/extra.tex}
+
+\section{Conclusion}
+\input{includes/conclusion.tex}
+
+\section*{References}
+\input{includes/biblio.tex}
+
+
+\end{document}
