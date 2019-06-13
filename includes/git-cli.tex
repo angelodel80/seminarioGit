@@ -19,7 +19,7 @@
     \addtocounter{nframe}{1}
 
 	\begin{center}
-		\includegraphics[width=.8\textwidth]{imgs/git-commands.png}
+		\includegraphics[width=.7\textwidth]{imgs/git-commands.png}
 	\end{center}
 
 \end{frame}
@@ -64,7 +64,7 @@
     \addtocounter{nframe}{1}
 
 	\begin{center}
-		\includegraphics[width=.8\textwidth]{imgs/git-config.png}
+		\includegraphics[width=.95\textwidth]{imgs/git-config.png}
 	\end{center}
 
 \end{frame}
@@ -98,8 +98,7 @@
 			\item stage and commit changes
 			\item ignore certain files and file patterns
 			\item undo mistakes
-			\item browse the history
-			\item view changes
+			\item browse the history and view changes
 			\item push and pull from remote repositories
 		\end{itemize}
     \end{block}
@@ -134,7 +133,6 @@
 
 \end{frame}
 
-
 \begin{frame}
     \frametitle{Git and GitHub}
     \framesubtitle{Getting started with Git}
@@ -147,15 +145,14 @@
 
 	\begin{block}{specify the files you want to track}
 		\begin{itemize}
-			\item git add <FILE(S)>
-			\item git commit -m "<MESSAGE>"
+			\item \texttt{git add <FILE(S)>}
+			\item \texttt{git commit -m "<MESSAGE>"}
 		\end{itemize}
 	\end{block}
 	
-	\textit{Git repository with tracked files and an initial commit.}
+	\textit{Git repository with tracked files and an initial commit}
     
 \end{frame}
-
 
 \begin{frame}
     \frametitle{Git and GitHub}
@@ -194,7 +191,7 @@
     \addtocounter{nframe}{1}
 
 	\begin{center}
-		\includegraphics[width=.8\textwidth]{imgs/git-lifecycle-files.png}
+		\includegraphics[width=.95\textwidth]{imgs/git-lifecycle-files.png}
 	\end{center}
 
 \end{frame}
@@ -207,7 +204,7 @@
 	\textit{To determine which files are in which state: \textbf{the git status command}}
 
 	\begin{center}
-		\includegraphics[width=.8\textwidth]{imgs/git-status.png}
+		\includegraphics[width=.9\textwidth]{imgs/git-status.png}
 	\end{center}
 
 \end{frame}
@@ -260,7 +257,7 @@
 	\end{block}
 
 	\begin{center}
-		\includegraphics[width=.8\textwidth]{imgs/git-add-modify.png}
+		\includegraphics[width=.9\textwidth]{imgs/git-add-modify.png}
 	\end{center}
 
 \end{frame}
@@ -291,7 +288,7 @@
 	\end{center}
 	
 	\begin{center}
-		\includegraphics[width=.8\textwidth]{imgs/gitignore.png}
+		\includegraphics[width=.7\textwidth]{imgs/gitignore.png}
 	\end{center}
 
 \end{frame}
@@ -392,15 +389,22 @@
 
 	\begin{block}{git mv}
 		\begin{itemize}
-			\item \texttt{git mv <FILE_FROM> <FILE_TO>}
+			\item \texttt{git mv <FILE-FROM> <FILE-TO>}
 		\end{itemize}
 	\end{block}
 
+\end{frame}
+
+\begin{frame}
+	\frametitle{Git and GitHub}
+    \framesubtitle{moving files}
+    \addtocounter{nframe}{1}
+
 	\begin{block}{git mv}
 		\begin{itemize}
-			\item \texttt{mv <FILE_FROM> <FILE_TO>}
-			\item \texttt{git rm <FILE_FROM>}
-			\item \texttt{git add <FILE_TO>}
+			\item \texttt{mv <FILE-FROM> <FILE-TO>}
+			\item \texttt{git rm <FILE-FROM>}
+			\item \texttt{git add <FILE-TO>}
 		\end{itemize}
 	\end{block}
 \end{frame}
@@ -444,12 +448,11 @@
     \framesubtitle{History of commits}
     \addtocounter{nframe}{1}
 
-	\begin{block}{git log --stat}
+	
 		\begin{center}
-			\includegraphics[width=.9\textwidth]{imgs/git-log-stats.png}
+			\includegraphics[width=.8\textwidth]{imgs/git-log-stats.png}
 		\end{center}
-	\end{block}
-
+	
 \end{frame}
 
 \begin{frame}
@@ -460,7 +463,7 @@
 	\begin{block}{git log options}
 		\begin{center}
 			%\includegraphics[width=.9\textwidth]{imgs/git-log-stats.png}
-			\includegraphics[width=.9\textwidth]{imgs/git-log-options.png}
+			\includegraphics[width=.95\textwidth]{imgs/git-log-options.png}
 		\end{center}
 	\end{block}
 
@@ -468,15 +471,14 @@
 
 \begin{frame}
 	\frametitle{Git and GitHub}
-    \framesubtitle{History of commits}
+    \framesubtitle{git log --pretty}
     \addtocounter{nframe}{1}
 
-	\begin{block}{git log --pretty}
+
 		\begin{center}
 			%\includegraphics[width=.9\textwidth]{imgs/git-log-stats.png}
 			\includegraphics[width=.9\textwidth]{imgs/git-log-pretty.png}
 		\end{center}
-	\end{block}
 
 \end{frame}
 
@@ -487,8 +489,8 @@
 
 	\begin{block}{git log limit options}
 		\begin{center}
-			\includegraphics[width=.9\textwidth]{imgs/git-log-stats.png}
-			%\includegraphics[width=.9\textwidth]{imgs/git-log-limits.png}
+			%\includegraphics[width=.9\textwidth]{imgs/git-log-stats.png}
+			\includegraphics[width=.95\textwidth]{imgs/git-log-limits.png}
 		\end{center}
 	\end{block}
 
@@ -499,7 +501,7 @@
     \framesubtitle{History of commits}
     \addtocounter{nframe}{1}
 
-	\texttt{git log --pretty=``%h: %an -- %s'' --no-merges}
+	\texttt{git log --pretty="\%h: \%an -- \%s" --no-merges}
 	\begin{block}{git log --pretty}
 		\begin{center}
 			\includegraphics[width=.9\textwidth]{imgs/git-log-out.png}
@@ -698,6 +700,13 @@
 		Git has the ability to \textbf{tag specific points} in a \textit{repository's history} as being important, e.g. mark release points. Git supports two types of tags: lightweight and annotated.
 	\end{block}
 
+\end{frame}
+
+\begin{frame}
+	\frametitle{Git and GitHub}
+    \framesubtitle{Tagging}
+    \addtocounter{nframe}{1}
+
 	\begin{block}{git tag}
 		\begin{itemize}
 			\item \texttt{git tag [-l] [--list] <PATTERN>} (list tags)
@@ -726,6 +735,4 @@
 			\item \texttt{git checkout <TAG-NAME>} (View the files in tag version)
 		\end{itemize}
 	\end{block}
-
 \end{frame}
-
