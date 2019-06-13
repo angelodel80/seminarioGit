@@ -107,7 +107,245 @@
 
 \end{frame}
 
+\begin{frame}
+    \frametitle{Git and GitHub}
+    \framesubtitle{Getting started with Git}
+    \addtocounter{nframe}{1}
+	
+	\begin{block}{git repository}
+		\begin{itemize}
+			\item local directory that is not under version control, and turn it into a git repository
+			\item clone an existing Git repository from elsewhere
+		\end{itemize}
+    \end{block}
 
+\end{frame}
+
+\begin{frame}
+    \frametitle{Git and GitHub}
+    \framesubtitle{Getting started with Git}
+    \addtocounter{nframe}{1}
+	
+	\begin{block}{git repository init}
+		\begin{itemize}
+			\item \texttt{git init}
+			\item \texttt{git clone <URL> <DIR>}
+		\end{itemize}
+    \end{block}
+
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Git and GitHub}
+    \framesubtitle{Getting started with Git}
+    \addtocounter{nframe}{1}
+	
+	\begin{block}{git repository init}
+		After \textbf{init} nothing in the project is tracked yet.\\
+		Need to begin tracking those files and do an initial commit.
+	\end{block}
+
+	\begin{block}{specify the files you want to track}
+		\begin{itemize}
+			\item git add <FILE(S)>
+			\item git commit -m "<MESSAGE>"
+		\end{itemize}
+	\end{block}
+	
+	\textit{Git repository with tracked files and an initial commit.}
+    
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Git and GitHub}
+    \framesubtitle{Getting started with Git}
+    \addtocounter{nframe}{1}
+	
+	\begin{block}{git clone repository}
+		Every version of every file for the history of the project is pulled down by default when you run \texttt{git clone}
+    \end{block}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Git and GitHub}
+    \framesubtitle{Getting started with Git}
+    \addtocounter{nframe}{1}
+	
+	\begin{block}{git repository init}
+		Each file in your working directory can be in one of two states
+	\end{block}
+
+	\begin{block}{track files}
+		\begin{itemize}
+			\item tracked
+			\item untracked
+		\end{itemize}
+	\end{block}
+	
+	\textit{Tracked files are files that were in the last snapshot; they can be \textbf{unmodified}, \textbf{modified}, or \textbf{staged}}
+    
+\end{frame}
+
+\begin{frame}
+	\frametitle{Git and GitHub}
+    \framesubtitle{track files}
+    \addtocounter{nframe}{1}
+
+	\begin{center}
+		\includegraphics[width=.8\textwidth]{imgs/git-lifecycle-files.png}
+	\end{center}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Git and GitHub}
+    \framesubtitle{status files}
+    \addtocounter{nframe}{1}
+
+	\textit{To determine which files are in which state: \textbf{the git status command}}
+
+	\begin{center}
+		\includegraphics[width=.8\textwidth]{imgs/git-status.png}
+	\end{center}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Git and GitHub}
+    \framesubtitle{adding files}
+    \addtocounter{nframe}{1}
+
+
+	\begin{block}{git add}
+		In order to begin tracking a new file, you use the \textbf{command git add}
+	\end{block}
+
+	\begin{block}{git add}
+		file is now \textbf{tracked} and \textbf{staged} to be \textbf{committed}
+	\end{block}
+
+	\textit{The git add command \textbf{takes a path name} for either a file or a directory}
+	
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Git and GitHub}
+    \framesubtitle{adding files}
+    \addtocounter{nframe}{1}
+
+
+	\begin{block}{git add}
+		File that is tracked has been modified in the working directory but not yet staged
+	\end{block}
+
+	\begin{block}{git add}
+		To stage a modified tracked file, you have to run the \textbf{git add command} again.
+	\end{block}
+	
+	\textit{After git add, the files are staged and will go into your next commit}	
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Git and GitHub}
+    \framesubtitle{adding files}
+    \addtocounter{nframe}{1}
+
+
+	\begin{block}{git add}
+		If you modify a file after you run git add, you have to run git add again to stage the latest version of the file
+	\end{block}
+
+	\begin{center}
+		\includegraphics[width=.8\textwidth]{imgs/git-add-modify.png}
+	\end{center}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Git and GitHub}
+    \framesubtitle{ignoring files}
+    \addtocounter{nframe}{1}
+
+
+	\begin{block}{.gitignore file}
+		If you’ll have a class of files that you don’t want to track
+	\end{block}
+
+	\begin{block}{.gitignore file}
+		you can create a file listing patterns to match them named \textbf{.gitignore}.
+	\end{block}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Git and GitHub}
+    \framesubtitle{ignoring files}
+    \addtocounter{nframe}{1}
+
+	\begin{center}
+		\texttt{more .gitignore}
+	\end{center}
+	
+	\begin{center}
+		\includegraphics[width=.8\textwidth]{imgs/gitignore.png}
+	\end{center}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Git and GitHub}
+    \framesubtitle{viewing files}
+    \addtocounter{nframe}{1}
+
+	\begin{block}{git diff}
+		know exactly what you changed, not just which files were changed\\
+		by using the \textbf{git diff command}
+	\end{block}
+
+	\begin{block}{git diff}
+		\begin{itemize}
+			\item What have you changed but not yet staged (\texttt{git diff})
+			\item what have you staged that you are about to commit (\texttt{git diff --staged})
+		\end{itemize}
+	
+	\end{block}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Git and GitHub}
+    \framesubtitle{viewing files}
+    \addtocounter{nframe}{1}
+	
+	\begin{center}
+		\includegraphics[width=.8\textwidth]{imgs/Diffing-line-word.png}
+	\end{center}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Git and GitHub}
+    \framesubtitle{committing files}
+    \addtocounter{nframe}{1}
+
+	\begin{block}{git commit}
+		Any files you have created or modified that you haven’t run git add on since you edited them — won’t go into the commit.
+	\end{block}
+
+	\begin{block}{git commit}
+		\begin{itemize}
+			\item the simplest way to commit is to type (\texttt{git commit})
+			\item type your commit message inline  (\texttt{git commit -m "message"})
+		\end{itemize}
+	
+	\end{block}
+
+\end{frame}
 
 % frame 00
 \begin{frame}
