@@ -460,8 +460,8 @@
 
 	\begin{block}{git log options}
 		\begin{center}
-			\includegraphics[width=.9\textwidth]{imgs/git-log-stats.png}
-			%\includegraphics[width=.9\textwidth]{imgs/git-log-options.png}
+			%\includegraphics[width=.9\textwidth]{imgs/git-log-stats.png}
+			\includegraphics[width=.9\textwidth]{imgs/git-log-options.png}
 		\end{center}
 	\end{block}
 
@@ -474,8 +474,8 @@
 
 	\begin{block}{git log --pretty}
 		\begin{center}
-			\includegraphics[width=.9\textwidth]{imgs/git-log-stats.png}
-			%\includegraphics[width=.9\textwidth]{imgs/git-log-pretty.png}
+			%\includegraphics[width=.9\textwidth]{imgs/git-log-stats.png}
+			\includegraphics[width=.9\textwidth]{imgs/git-log-pretty.png}
 		\end{center}
 	\end{block}
 
@@ -509,7 +509,226 @@
 
 \end{frame}
 
+\begin{frame}
+	\frametitle{Git and GitHub}
+    \framesubtitle{Undoing things}
+    \addtocounter{nframe}{1}
 
+	\begin{block}{amend option}
+		If you commit too early and possibly forget to add some files, make the additional changes you forgot, stage them, and \textbf{commit again using the --amend option}.
+		\\ You end up with a single commit — the \textit{second commit replaces the first one}.
+	\end{block}
+
+	\begin{block}{git log}
+		\begin{itemize}
+			\item \texttt{git commit --amend [-m "MESSAGE"]}
+		\end{itemize}
+	\end{block}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Git and GitHub}
+    \framesubtitle{Undoing things}
+    \addtocounter{nframe}{1}
+
+	\begin{block}{unstage and discard changes}
+		How can you unstage a file or revert it back to what it looked like when you last committed.
+	\end{block}
+
+	\begin{block}{git reset and checkout}
+		\begin{itemize}
+			\item \texttt{git reset HEAD <FILE>} (unstage file)
+			\item \texttt{git checkout -- <FILE>} (discard changes)
+		\end{itemize}
+	\end{block}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Git and GitHub}
+    \framesubtitle{Working with Remotes}
+    \addtocounter{nframe}{1}
+
+	\begin{block}{Remote Repositories}
+		Remote repositories are versions of your project that are hosted on the Internet
+	\end{block}
+
+	\begin{block}{Remote Repositories}
+		Collaborating with others involves managing remote repositories. \\
+		This entails \textbf{pushing} and \textbf{pulling} data to and from remote repositories when you need to share data.
+	\end{block}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Git and GitHub}
+    \framesubtitle{Working with Remotes}
+    \addtocounter{nframe}{1}
+
+	\begin{block}{capabilities}
+		\begin{itemize}
+			\item add remote repositories
+			\item remove remotes
+			\item manage various remote branches
+			\item define them as being tracked or not
+			\item pushing, pulling and fetching operations
+		\end{itemize}
+	\end{block}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Git and GitHub}
+    \framesubtitle{Working with Remotes}
+    \addtocounter{nframe}{1}
+
+	\begin{block}{remote repositories}
+		To see which remote servers you have configured, you can run the \textbf{git remote command}
+	\end{block}
+
+	\begin{block}{git remote}
+		\begin{itemize}
+			\item \texttt{git remote}
+			\item \texttt{git remote -v}
+		\end{itemize}
+	\end{block}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Git and GitHub}
+    \framesubtitle{Working with Remotes}
+    \addtocounter{nframe}{1}
+
+	\begin{block}{remote repositories}
+		To add a new remote Git repository as a shortname you can reference easily, run \textbf{git remote add <shortname> <url>}:
+	\end{block}
+
+	\begin{block}{git remote}
+		\begin{itemize}
+			\item \texttt{git remote add upstream-edition https://github.com/angelodel80/myEditon}
+		\end{itemize}
+	\end{block}
+
+	\textit{If you clone a repository, the command automatically adds that remote repository under the name “origin”}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Git and GitHub}
+    \framesubtitle{Working with Remotes}
+    \addtocounter{nframe}{1}
+
+	\begin{block}{remote repositories}
+		to get data from your remote projects, you can run the \textbf{git fetch command}. \\
+		It’s important to note that the git fetch command only downloads the data to your local repository — it doesn't automatically merge it with any of your work or modify what you’re currently working on.
+	\end{block}
+
+	\begin{block}{git remote}
+		\begin{itemize}
+			\item \texttt{git fetch <remote>}
+		\end{itemize}
+	\end{block}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Git and GitHub}
+    \framesubtitle{Working with Remotes}
+    \addtocounter{nframe}{1}
+
+	\begin{block}{remote repositories}
+		When you have your project at a point that you want to share, you have to \textbf{push it upstream}. This pushes any commits you’ve done back up to the server if you have write access and if nobody has pushed in the meantime.
+	\end{block}
+
+	\begin{block}{git remote}
+		\begin{itemize}
+			\item \texttt{git push <remote> <branch>}
+		\end{itemize}
+	\end{block}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Git and GitHub}
+    \framesubtitle{Working with Remotes}
+    \addtocounter{nframe}{1}
+
+
+	\begin{block}{git remote}
+		\begin{itemize}
+			\item \texttt{git remote show <remote>}
+		\end{itemize}
+	\end{block}
+
+
+	\begin{block}{remote repositories}
+		\begin{center}
+			\includegraphics[width=.9\textwidth]{imgs/git-remote-show}
+		\end{center}
+	\end{block}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Git and GitHub}
+    \framesubtitle{Working with Remotes}
+    \addtocounter{nframe}{1}
+
+	\begin{block}{remote repositories}
+		You can run \textbf{git remote rename} to change a remote’s shortname, if you want to remove a remote repository you can either use \textbf{git remote remove} command or \textbf{git remote rm} command. 
+
+	\end{block}
+
+	\begin{block}{git remote}
+		\begin{itemize}
+			\item \texttt{git remote rename original upstream-edition}
+			\item \texttt{git remote remove upstream-edition}
+		\end{itemize}
+	\end{block}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Git and GitHub}
+    \framesubtitle{Tagging}
+    \addtocounter{nframe}{1}
+
+	\begin{block}{tag specific points}
+		Git has the ability to \textbf{tag specific points} in a \textit{repository's history} as being important, e.g. mark release points. Git supports two types of tags: lightweight and annotated.
+	\end{block}
+
+	\begin{block}{git tag}
+		\begin{itemize}
+			\item \texttt{git tag [-l] [--list] <PATTERN>} (list tags)
+			\item \texttt{git tag -a <TAG-NAME> -m "MESSAGGIO" } (create an annotated tag)
+			\item \texttt{git show <TAG-NAME>} (show the tag data)
+			\item \texttt{git push <REMOTE> <TAG-NAME>} (push tag)
+			\item \texttt{git tag -d  <TAG-NAME>} (delate locally)
+			\item \texttt{git push <REMOTE> --delete <TAG-NAME>} (delate remotelly)
+		\end{itemize}
+	\end{block}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Git and GitHub}
+    \framesubtitle{Tagging}
+    \addtocounter{nframe}{1}
+
+	\begin{block}{tag specific points}
+		If you want to view the versions of files a tag is pointing to, you can do a git checkout of that tag.\\
+		This puts your repository in “detached HEAD” state, which has some ill side effects
+	\end{block}
+
+	\begin{block}{git tag}
+		\begin{itemize}
+			\item \texttt{git checkout <TAG-NAME>} (View the files in tag version)
+		\end{itemize}
+	\end{block}
+
+\end{frame}
 
 % frame 00
 \begin{frame}

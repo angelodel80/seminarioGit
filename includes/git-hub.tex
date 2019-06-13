@@ -1,25 +1,3 @@
-% riprendere qualcosa dalle slide Fiormonte Ciotti (Introduzione alla codifica XML per i testi umanistici)
-
-% Il computer si è dimostrato un potente strumento per redigere, conservare, diffondere, analizzare i testi.
-% % dalla slide vitali
-% The ecosystem of text
-% • Editing
-% • Validating
-% • Printing & displaying
-% • Transforming and converting
-% • Annotating
-% – Annotating annotations
-% • Searching
-% • ... 
-
-
-
-% detta difficile: “riconoscere un fenomeno dato come il token di un dato type presuppone alcune ipotesi sul contesto espressivo e sul co-testo discorsivo” (Eco)
-
-% La codifica elettronica dei testi ha rappresentato uno dei temi fondamentali della riflessione e della sperimentazione nel dominio dell’Informatica umanistica.
-
-% ad oggi la soluzione considerata ottimale per una corretta rappresentazione del testo è l'adozione dei markup language descrittivi basati su XML
-
 
 \begin{frame}
 	\frametitle{Rappresentazione digitale dei testi}
@@ -239,3 +217,450 @@
 % • Texts has semantics
 % • Text has variants
 % • Text has a lot of things that can be said about it 
+
+• Evidenziazione, page 170
+GitHub is the single largest host for Git repositories,
+
+• Evidenziazione, page 170
+central point of collaboration
+
+• Evidenziazione, page 170
+A large percentage of all Git repositories are hosted on GitHub
+
+• Evidenziazione, page 170
+Git hosting, issue tracking, code review, and other things
+
+• Evidenziazione, page 170
+need to interact with GitHub at some point while using Git professionally
+
+• Evidenziazione, page 170
+This chapter is about using GitHub effectively.
+
+• Evidenziazione, page 170
+signing up for and managing an account
+
+• Evidenziazione, page 170
+creating and using Git repositories, common workflows to contribute to projects and to accept contributions to yours
+
+• Evidenziazione, page 170
+set up a free user account
+
+• Evidenziazione, page 170
+Sign up for GitHub
+
+• Evidenziazione, page 171
+GitHub will send you an email to verify the address you provided
+
+• Evidenziazione, page 171
+your dashboard page
+
+• Evidenziazione, page 171
+ready to use GitHub
+
+• Evidenziazione, page 171
+connect with Git repositories using the https:// protocol
+
+• Evidenziazione, page 172
+Next, if you wish, you can replace the avatar that is generated for you with an image of your choosing.
+
+• Evidenziazione, page 173
+people will see your avatar next to your username
+
+• Evidenziazione, page 174
+The way that GitHub maps your Git commits to your user is by email address
+
+• Evidenziazione, page 174
+extra security
+
+• Evidenziazione, page 174
+Two-factor Authentication
+
+• Evidenziazione, page 174
+Authentication is an authentication mechanism
+
+• Evidenziazione, page 175
+code in addition to your password whenever you log into GitHub.
+
+• Evidenziazione, page 175
+could be useful in helping you contribute to an existing project
+
+• Evidenziazione, page 175
+you don’t have push access, you can “fork” the project
+
+• Evidenziazione, page 175
+GitHub will make a copy of the project that is entirely yours
+
+• Evidenziazione, page 175
+it lives in your namespace, and you can push to it
+
+• Evidenziazione, page 175
+170 about the change until the owner is happy with it
+
+• Evidenziazione, page 175
+In GitHub, a “fork” is simply the same project in your own namespace
+
+• Evidenziazione, page 175
+People can fork a project, push to it, and contribute their changes back to the original repository by creating what’s called a Pull Request
+
+• Evidenziazione, page 175
+This opens up a discussion thread with code review,
+
+• Evidenziazione, page 175
+the contributor can then communicate 170 about the change until the owner is happy with it
+
+• Evidenziazione, page 176
+at which point the owner can merge it in
+
+• Evidenziazione, page 176
+“Fork” button
+
+• Evidenziazione, page 176
+with your own writeable copy of the code.
+
+• Evidenziazione, page 176
+GitHub is designed around a particular collaboration workflow, centered on Pull Requests.
+
+• Evidenziazione, page 176
+teams use GitHub’s web based tools.
+
+• Evidenziazione, page 176
+Let’s walk through an example
+
+• Evidenziazione, page 177
+So let’s improve the program and submit it back to the project as a proposed change.
+
+• Evidenziazione, page 177
+we click the Fork button as mentioned earlier to get our own copy of the project.
+
+• Evidenziazione, page 177
+We will clone it locally, create a topic branch, make the code change and finally push that change back up to GitHub.
+
+• Evidenziazione, page 178
+git diff --word-diff
+
+• Evidenziazione, page 178
+[-delay(1000);-]{+delay(3000);+}
+
+• Evidenziazione, page 178
+[-delay(1000);-]{+delay(3000);+}
+
+• Evidenziazione, page 178
+Clone our fork of the project locally
+
+• Evidenziazione, page 178
+Create a descriptive topic branch
+
+• Evidenziazione, page 178
+Make our change to the code
+
+• Evidenziazione, page 178
+Check that the change is good
+
+• Evidenziazione, page 178
+Commit our change to the topic branch
+
+• Evidenziazione, page 178
+Push our new topic branch back up to our GitHub fork
+
+• Evidenziazione, page 178
+GitHub noticed that we pushed a new
+
+• Evidenziazione, page 179
+topic branch up and presents us with a big green button
+
+• Evidenziazione, page 179
+check out our changes and open a Pull Request to the original project
+
+• Evidenziazione, page 179
+give our Pull Request a title and description.
+
+• Evidenziazione, page 179
+unified diff of all the changes that will be made should this branch get merged by the project owner
+
+• Evidenziazione, page 180
+Create pull request button
+
+• Evidenziazione, page 180
+it’s also often used in internal projects at the beginning of the development cycle
+
+• Evidenziazione, page 180
+the project owner can look at the suggested change and merge it
+
+• Evidenziazione, page 180
+reject it or comment on it
+
+• Evidenziazione, page 181
+on GitHub this happens online
+
+• Evidenziazione, page 181
+leave a comment by clicking on any of the lines
+
+• Evidenziazione, page 181
+Anyone can also leave general comments on the Pull Request.
+
+• Evidenziazione, page 181
+both commenting on a line of code
+
+• Evidenziazione, page 181
+leaving a general comment in the discussion section
+
+• Evidenziazione, page 182
+with GitHub you simply commit to the topic branch again and push, which will automatically update the Pull Request
+
+• Evidenziazione, page 182
+Adding commits to an existing Pull Request doesn’t trigger a notification
+
+• Evidenziazione, page 183
+This button only shows up if you have write access to the repository and a trivial merge is possible
+
+• Evidenziazione, page 183
+If you click it GitHub will perform a “non-fast-forward” merge, meaning that even if the merge could be a fast-forward, it will still create a merge commit.
+
+• Evidenziazione, page 184
+This is the basic workflow that most GitHub projects use
+
+• Evidenziazione, page 184
+Topic branches are created, Pull Requests are opened on them, a discussion ensues, possibly more work is done on the branch and eventually the request is either closed or merged.
+
+• Evidenziazione, page 184
+initiate the code review and discussion process
+
+• Evidenziazione, page 184
+No forking necessary
+
+• Evidenziazione, page 195
+creating, maintaining and administering your own project.
+
+• Evidenziazione, page 195
+Let’s create a new repository to share our project code with
+
+• Evidenziazione, page 197
+All you really have to do here is provide a project name;
+
+• Evidenziazione, page 197
+click the “Create Repository” button
+
+• Evidenziazione, page 197
+new repository on GitHub,
+
+• Evidenziazione, page 197
+Since you have no code there yet, GitHub will show you instructions for how to create a brand-new Git repository, or connect an existing Git project.
+
+• Evidenziazione, page 197
+Now that your project is hosted on GitHub, you can give the URL to anyone you want to share your project with.
+
+• Evidenziazione, page 197
+It is often preferable to share the HTTPS based URL for a public project
+
+• Evidenziazione, page 197
+The HTTPS one is also exactly the same URL they would paste into a browser to view the project there.
+
+• Evidenziazione, page 197
+If you’re working with other people who you want to give commit access to, you need to add them as “collaborators”
+
+• Evidenziazione, page 197
+you want to give them push access to your repository, you can add them to your project.
+
+• Evidenziazione, page 197
+“push” access
+
+• Evidenziazione, page 197
+both read and write access to the project and Git repository
+
+• Evidenziazione, page 198
+Then select “Collaborators”
+
+• Evidenziazione, page 198
+You can repeat this as many times as you like to grant access to everyone you like
+
+• Evidenziazione, page 198
+revoke access, just click the “X”
+
+• Evidenziazione, page 198
+get a Pull Request yourself.
+
+• Evidenziazione, page 198
+Pull Requests can either come from a branch in a fork of your repository or they can come from another branch in the same repository.
+
+• Evidenziazione, page 198
+The only difference is that the ones in a fork are often from people where you can’t push to their branch and they can’t push to yours,
+
+• Evidenziazione, page 198
+with internal Pull Requests generally both parties can access the branch.
+
+• Evidenziazione, page 199
+The other interesting URLs are the .diff and .patch URLs, which as you may guess, provide unified diff and patch versions of the Pull Request.
+
+• Evidenziazione, page 200
+As we covered in The GitHub Flow, you can now have a conversation with the person who opened the Pull Request.
+
+• Evidenziazione, page 200
+comment on specific lines of code
+
+• Evidenziazione, page 200
+Once the code is in a place you like and want to merge it in, you can either pull the code down and merge it locally, either with the git pull <url> <branch> syntax we saw earlier, or by adding the fork as a remote and fetching and merging.
+
+• Evidenziazione, page 201
+If you decide you don’t want to merge it, you can also just close the Pull Request and the person who opened it will be notified.
+
+• Evidenziazione, page 201
+neat trick tha
+
+• Evidenziazione, page 203
+If you see a Pull Request that is moving in the right direction and you have an idea for a change that depends on it or you’re not sure is a good idea, or you just don’t have push access to the target branch, you can open a Pull Request directly to it.
+
+• Evidenziazione, page 204
+Mentions and Notifications
+
+• Evidenziazione, page 204
+GitHub also has a pretty nice notifications system
+
+• Evidenziazione, page 204
+In any comment you can start typing a @ character and it will begin to autocomplete with the names and usernames of people who are collaborators or contributors in the project.
+
+• Evidenziazione, page 204
+pulling people into conversations rather than making them poll
+
+• Evidenziazione, page 205
+You will also be subscribed to something if you opened it, if you’re watching the repository or if you comment on something
+
+• Evidenziazione, page 205
+no longer wish to receive notifications, there is an “Unsubscribe” button
+
+• Evidenziazione, page 205
+If you go to the “Notification center” tab from the settings page, you can see some of the options you have.
+
+• Evidenziazione, page 206
+The two choices are to get notifications over “Email” and over “Web” and you can choose either,
+
+• Evidenziazione, page 206
+Web notifications only exist on GitHub and you can only check them on GitHub
+
+• Evidenziazione, page 206
+If you click on that, you will see a list of all the items you have been notified about
+
+• Evidenziazione, page 207
+Email notifications are the other way you can handle notifications through GitHub
+
+• Evidenziazione, page 207
+It’s also worth noting that if you have both email and web notifications enabled and you read the email version of the notification, the web version will be marked as read as well if you have images allowed in your mail client.
+
+• Evidenziazione, page 207
+There are a couple of special files that GitHub will notice if they are present in your repository.
+
+• Evidenziazione, page 208
+The first is the README file, which can be of nearly any format that GitHub recognizes as prose. For example, it could be README, README.md, README.asciidoc, etc. If GitHub sees a README file in your source, it will render it on the landing page of the project.
+
+• Evidenziazione, page 208
+Many teams use this file to hold all the relevant project information for someone who might be new to the repository or project. This generally includes things like:
+
+• Evidenziazione, page 208
+What the project is for
+
+• Evidenziazione, page 208
+How to configure and install it
+
+• Evidenziazione, page 208
+An example of how to use it or get it running
+
+• Evidenziazione, page 208
+The license that the project is offered under
+
+• Evidenziazione, page 208
+How to contribute to it
+
+• Evidenziazione, page 208
+Since GitHub will render this file, you can embed images or links in it for added ease of understanding.
+
+• Evidenziazione, page 208
+Generally there are not a lot of administrative things you can do with a single project, but there are a couple of items that might be of interest.
+
+• Evidenziazione, page 209
+If you would like to transfer a project to another user or an organization in GitHub, there is a “Transfer ownership” option at the bottom of the same “Options” tab of your repository settings page that allows you to do this.
+
+• Evidenziazione, page 209
+This is helpful if you are abandoning a project and someone wants to take it over
+
+• Evidenziazione, page 209
+move it into an organization.
+
+• Evidenziazione, page 209
+sets up a redirect from your URL
+
+• Evidenziazione, page 210
+In addition to single-user accounts, GitHub has what are called Organizations
+
+• Evidenziazione, page 210
+Organizational accounts have a namespace where all their projects exist
+
+• Evidenziazione, page 210
+These accounts represent a group of people with shared ownership of projects
+
+• Evidenziazione, page 210
+many tools to manage subgroups of those people
+
+• Evidenziazione, page 210
+companies
+
+• Evidenziazione, page 210
+New organization” from the menu
+
+• Evidenziazione, page 210
+First you’ll need to name your organization and provide an email address for a main point of contact for the group
+
+• Evidenziazione, page 210
+When you create new repositories you can create them either under your personal account or under any of the organizations that you are an owner in
+
+• Evidenziazione, page 210
+Organizations are associated with individual people by way of teams
+
+• Evidenziazione, page 210
+grouping of individual user accounts and repositories within the organization
+
+• Evidenziazione, page 211
+Teams make this easy, without having to manage the collaborators for every individual repository.
+
+• Evidenziazione, page 211
+ou can use to add members to the team
+
+• Evidenziazione, page 211
+Each team can have read only, read/write or administrative access to the repositorie
+
+• Evidenziazione, page 211
+“Settings” button
+
+• Evidenziazione, page 212
+Additionally, team @mentions (such as @acmecorp/frontend) work much the same as they do with individual users, except that all members of the team are then subscribed to the thread
+
+• Evidenziazione, page 212
+Organizations also give owners access to all the information about what went on under the organization. You can go to the Audit Log tab and see what events have happened at an organization level, who did them and where in the world they were done.
+
+• Evidenziazione, page 220
+curl
+
+• Evidenziazione, page 222
+GitHub user
+
+• Evidenziazione, page 222
+how to create an account
+
+• Evidenziazione, page 222
+manage an organization,
+
+• Evidenziazione, page 222
+create and push to repositories
+
+• Evidenziazione, page 222
+contribute to other people’s projects
+
+• Evidenziazione, page 222
+ccept contributions from others
+
+• Evidenziazione, page 223
+ource code control
+
+• Evidenziazione, page 223
+basic tasks of tracking and committing files
+
+• Evidenziazione, page 360
+important actions occur
