@@ -347,6 +347,170 @@
 
 \end{frame}
 
+\begin{frame}
+	\frametitle{Git and GitHub}
+    \framesubtitle{committing files}
+    \addtocounter{nframe}{1}
+
+	\begin{block}{git commit}
+		Every time you perform a commit, you’re recording a snapshot of your project that you can revert to or compare to later.
+	\end{block}
+
+	\begin{center}
+		\includegraphics[width=.8\textwidth]{imgs/git-commit.png}
+	\end{center}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Git and GitHub}
+    \framesubtitle{removing files}
+    \addtocounter{nframe}{1}
+
+	\begin{block}{git rm}
+		To remove a file from git, you have to remove it from your tracked files
+	\end{block}
+
+	\begin{block}{git rm}
+		\begin{itemize}
+			\item \texttt{git rm <FILE>}
+			\item \texttt{git rm -f <FILE>}
+			\item \texttt{git rm --cached <FILE>}
+		\end{itemize}
+	
+	\end{block}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Git and GitHub}
+    \framesubtitle{moving files}
+    \addtocounter{nframe}{1}
+
+	\begin{block}{git mv}
+		If you rename a file in Git, no metadata is stored in Git that tells it you renamed the file
+	\end{block}
+
+	\begin{block}{git mv}
+		\begin{itemize}
+			\item \texttt{git mv <FILE_FROM> <FILE_TO>}
+		\end{itemize}
+	\end{block}
+
+	\begin{block}{git mv}
+		\begin{itemize}
+			\item \texttt{mv <FILE_FROM> <FILE_TO>}
+			\item \texttt{git rm <FILE_FROM>}
+			\item \texttt{git add <FILE_TO>}
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Git and GitHub}
+    \framesubtitle{History of commits}
+    \addtocounter{nframe}{1}
+
+	\begin{block}{git log}
+		\textbf{git log} lists the commits made in that repository in reverse chronological order, each commit with its checksum hash string, author’s name and email, date, the commit message.
+	\end{block}
+
+	\begin{block}{git log}
+		\begin{itemize}
+			\item \texttt{git log <options>}
+		\end{itemize}
+	\end{block}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Git and GitHub}
+    \framesubtitle{History of commits}
+    \addtocounter{nframe}{1}
+
+	\begin{block}{git log}
+		if you want to see some abbreviated stats for each commit, you can use \textbf{the --stat option}
+	\end{block}
+
+	\begin{block}{git log}
+		\begin{itemize}
+			\item \texttt{git log --stat}
+		\end{itemize}
+	\end{block}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Git and GitHub}
+    \framesubtitle{History of commits}
+    \addtocounter{nframe}{1}
+
+	\begin{block}{git log --stat}
+		\begin{center}
+			\includegraphics[width=.9\textwidth]{imgs/git-log-stats.png}
+		\end{center}
+	\end{block}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Git and GitHub}
+    \framesubtitle{History of commits}
+    \addtocounter{nframe}{1}
+
+	\begin{block}{git log options}
+		\begin{center}
+			\includegraphics[width=.9\textwidth]{imgs/git-log-stats.png}
+			%\includegraphics[width=.9\textwidth]{imgs/git-log-options.png}
+		\end{center}
+	\end{block}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Git and GitHub}
+    \framesubtitle{History of commits}
+    \addtocounter{nframe}{1}
+
+	\begin{block}{git log --pretty}
+		\begin{center}
+			\includegraphics[width=.9\textwidth]{imgs/git-log-stats.png}
+			%\includegraphics[width=.9\textwidth]{imgs/git-log-pretty.png}
+		\end{center}
+	\end{block}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Git and GitHub}
+    \framesubtitle{History of commits}
+    \addtocounter{nframe}{1}
+
+	\begin{block}{git log limit options}
+		\begin{center}
+			\includegraphics[width=.9\textwidth]{imgs/git-log-stats.png}
+			%\includegraphics[width=.9\textwidth]{imgs/git-log-limits.png}
+		\end{center}
+	\end{block}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Git and GitHub}
+    \framesubtitle{History of commits}
+    \addtocounter{nframe}{1}
+
+	\texttt{git log --pretty=``%h: %an -- %s'' --no-merges}
+	\begin{block}{git log --pretty}
+		\begin{center}
+			\includegraphics[width=.9\textwidth]{imgs/git-log-out.png}
+		\end{center}
+	\end{block}
+
+\end{frame}
+
+
+
 % frame 00
 \begin{frame}
 	\frametitle{Elementi di Codifica dei Caratteri}
